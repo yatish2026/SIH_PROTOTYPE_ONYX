@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root {
+    --black: #272D3B;
+    --red: #ED176F;
+    --coral: #F7817F;
+    --gradient: linear-gradient(90deg, var(--red), var(--coral));
+}
+body {
+    background-image: url('https://images.unsplash.com/photo-1492305175278-0f25e6d0e3f1');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: linear-gradient(to right, #4ae0137f, #43e0e8);
+
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all 0.4s linear;
+}
+
+*::selection {
+    background: var(--red);
+    color: #0dc4ce;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+}
+
+section {
+    padding: 3rem 9%;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.7rem 3rem;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: var(--gradient);
+    color: #0cd17f;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+.heading{
+    text-align:center;
+    color:transparent;
+    background:var(--gradient);
+    -webkit-background-clip:text;
+    background-clip:text;
+    font-size:5rem;
+    text-transform:uppercase;
+    padding:1rem
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--black);
+    z-index: 1000;
+    padding: 2rem 9%;
+    border-bottom: 0.1rem solid #fff3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    font-weight: bolder;
+    color: #0becdd;
+    font-size: 2.5rem;
+}
+
+header .navbar a {
+    font-size: 2rem;
+    margin-left: 2.5rem;
+    color: #f5c01287;
+}
+
+header .navbar a:hover {
+    color: var(--red);
+}
+
+#menu-bar {
+    font-size: 3rem;
+    color: hsla(91, 87%, 50%, 0);
+    cursor: pointer;
+    display: none;
+}
+
+.home {
+    background: url(airimg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.home .content {
+    font-size: 2.5rem;
+    padding-top: 5rem;
+    width: 70rem;
+    margin: 0 auto;
+}
+
+.home .content h3 {
+    font-size: 20.5rem;
+    color: #e01313dc;
+}
+
+.home .content p {
+    font-size: 30px;
+    color: #0eafcf;
+    padding: 1rem 0;
+}
+
+.home .swiper {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.home .swiper-slide {
+    width: 70%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+}
+.swiper-slide {
+    position: relative;
+}
+
+.slide-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+.slide-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.slide-text p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+.home .swiper-slide img {
+    width: 100%;
+    height: auto;
+}
+.features .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.features .box-container .box {
+    margin: 1rem;
+    border-radius: .5rem;
+    text-align: center;
+    background: rgba(13, 122, 255, 0.495);
+    padding: 1rem;
+    flex: 1 1 30rem;
+    cursor: pointer;
+}
+
+.features .box-container .box i {
+    color: var(--yellow);
+    font-size: 5rem;
+    padding: 1rem;
+}
+
+.features .box-container .box h3 {
+    color: var(--black);
+    font-size: 2.4rem; /* removed extra space between the value and 'rem' */
+    padding: 1rem;
+}
+
+.features .box-container .box p {
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.features .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.features .box-container .box {
+    margin: 1rem;
+    border-radius: .5rem;
+    text-align: center;
+    background: rgba(23, 91, 237, 0.281);
+    padding: 1rem;
+    flex: 1 1 30rem;
+    cursor: pointer;
+    transition: transform 0.9s ease-in-out;
+}
+
+.features .box-container .box:hover {
+    transform: translateY(-5px); /* Example: move the box 5px up on hover */
+}
+
+.features .box-container .box i {
+    color: var(--green);
+    font-size: 5rem;
+    padding: 1rem;
+}
+
+.features .box-container .box h3 {
+    color: var(--black);
+    font-size: 2.4rem;
+    padding: 1rem;
+}
+
+.features .box-container .box p {
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.features .box-container .box:hover {
+    background-color: rgba(91, 13, 159, 0.393);
+}
+
+.about .row{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+.about .row .image{
+    flex:1 1 40rem;
+}
+
+.about .row .image img{
+    width:100%;
+}
+.about .row .content{
+    flex:1 1 40rem;
+}
+.about .row .content h3{
+    color:var(--black);
+    font-size: 3.5rem;
+}
+.about .row .content p{
+    color:#666;
+    font-size:1.7rem;
+    padding:1rem 0;
+}
+
+
+
+
+
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+}

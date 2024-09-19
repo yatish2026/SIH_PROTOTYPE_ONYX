@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+ <!-- Start of Conferbot Script -->
+ <script type="text/javascript">
+    (function (d, s, id) {
+      var js, el = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.async = true;
+      js.src = 'https://s3.ap-south-1.amazonaws.com/conferbot.defaults/dist/v1/widget.min.js';
+      js.id = id;
+      js.charset = 'UTF-8';
+      el.parentNode.insertBefore(js, el);
+      js.onload = function () {
+        var w = window.ConferbotWidget("65fe74806fbc342e3f90bd1b", "live_chat");
+      };
+    })(document, 'script', 'conferbot-js');
+</script>
+<!-- End of Conferbot Script -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive App Landing Page Website Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">ONYX 2024</a>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+            <a href="#usage">Usage</a>
+            <a href="#review">Review</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h1>REAL TIME AQI</h1>
+            <p>SMART INDIA HACKATHON</p>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+
+        <div class="swiper myswiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="https://liveweather.tiiny.site">
+                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" alt="Nature Image 1">
+                        <div class="slide-text">
+                            <h1>weather</h1>
+                            <p> air quality index...</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="your_link_here">
+                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" alt="Nature Image 1">
+                        <div class="slide-text">
+                            <h1>Carbon Footprint Tracking</h1>
+                            <p>.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href=https://air-quality-index.netlify.app/>
+                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" alt="Nature Image 2">
+                        <div class="slide-text">
+                            <h1>AQI</h1>
+                            <p>real time aqi </p>
+                        </div>
+                    </a>
+                    
+                </div> <div class="swiper-slide">
+                    <a href="https://yatish2026.github.io/health-/">
+                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" alt="Nature Image 2">
+                        <div class="slide-text">
+                            <h1>HEALTH CARE</h1>
+                            <p>we take care of your health</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Add more swiper-slide elements as needed -->
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        
+    </section>
+
+    <section class="features" id="features">
+        <h1 class="heading">App Features</h1>
+        <div class="box-container">
+            <div class="box privacy-protect">
+                <i class="fas fa-lock"></i>
+                <h3>Privacy Protection</h3>
+                <p>Your privacy is our top priority. We ensure that your data is secure and protected.</p>
+            </div>
+            <div class="box multiple-language">
+                <i class="fas fa-language"></i>
+                <h3>Multiple Language Support</h3>
+                <p>Our app supports multiple languages, making it accessible to users worldwide.</p>
+            </div>
+            <div class="box location-tracking">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Location Tracking</h3>
+                <p>Track your location seamlessly within the app for personalized experiences.</p>
+            </div>
+            <div class="box service-24x7">
+                <i class="fas fa-clock"></i>
+                <h3>24x7 Service</h3>
+                <p>Our support team is available 24x7 to assist you with any queries or concerns.</p>
+            </div>
+            <div class="box power-setting">
+                <i class="fas fa-power-off"></i>
+                <h3>Power Settings</h3>
+                <p>Customize power settings to optimize your app usage and save battery.</p>
+            </div>
+        </div>
+    </section>
+    
+<section class="about" id="about">
+<h1 class="heading">about the app</h1>
+<div class="row">
+
+    <div class="image">
+    <img src="imagine/about-img.png"alt="">
+</div>
+
+    <div class ="content">
+    <h3>take a look around this application</h3>
+    <p>creted by team ONXY 2024
+    </p>
+<div class="button">
+    <a href="#"><img src="imgage/google-btn.png" alt=""></a>
+    <a href="#"><img src="imgage/app-store-btn.png" alt=""></a>
+</div>
+</div>
+</div>
+
+</section>
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".swiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+    },
+    loop: true,
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+    }
+});
+
+
+        let menu = document.querySelector('#menu-bar');
+        let navbar = document.querySelector('.navbar');
+        menu.addEventListener('click', () => {
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('nav-toggle');
+        });
+        window.addEventListener('scroll', () => {
+            menu.classList.remove('fa-times');
+            navbar.classList.remove('nav-toggle');
+        });
+    </script>
+</body>
+</html>
